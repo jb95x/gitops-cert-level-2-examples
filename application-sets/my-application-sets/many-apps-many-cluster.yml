@@ -19,7 +19,7 @@ spec:
     metadata:
       name: '{{path.basename}}-{{name}}'
     spec:
-      project: '{{metadata.labels.environment}}'
+      project: defualt
       syncPolicy:
         automated:
           selfHeal: true
@@ -31,4 +31,4 @@ spec:
         path: '{{path}}'
       destination:
         server: '{{server}}'
-        namespace: default
+        namespace: '{{path.basename}}'
