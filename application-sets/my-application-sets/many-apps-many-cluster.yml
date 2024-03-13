@@ -19,7 +19,7 @@ spec:
     metadata:
       name: '{{path.basename}}-{{name}}'
     spec:
-      project: defualt
+      project: default
       syncPolicy:
         automated:
           selfHeal: true
